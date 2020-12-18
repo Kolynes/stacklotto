@@ -14,7 +14,7 @@ class AgentModel(models.Model):
     user = models.OneToOneField("UserModel", on_delete=models.CASCADE)
     status = models.CharField(max_length=3, choices=AGENT_STATUS, default=AGENT_NOT_APPLIED)
     code = models.CharField(max_length=50, null=True, blank=True)
-    location = models.CharField(max_length=200, blank=True, null=True)
+    location = models.CharField(max_length=100, blank=True, null=True)
 
     def __str__(self):
         return self.user.get_username()

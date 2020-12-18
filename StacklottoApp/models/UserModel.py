@@ -38,9 +38,9 @@ class UserModel(AbstractBaseUser, PermissionsMixin):
 
     phone = models.CharField(max_length=15, null=True, blank=True)
     balance = models.IntegerField(default=0)
-    bank_name = models.CharField(max_length=200, blank=True, null=True)
-    bank_account_number = models.CharField(max_length=200, blank=True, null=True)
-    bank_account_name = models.CharField(max_length=200, blank=True, null=True)
+    bank_name = models.CharField(max_length=100, blank=True, null=True)
+    bank_account_number = models.CharField(max_length=100, blank=True, null=True)
+    bank_account_name = models.CharField(max_length=100, blank=True, null=True)
     referee = models.ForeignKey("AffiliateModel", on_delete=models.SET_NULL, null=True, related_name="refferals")
 
     EMAIL_FIELD = "email"

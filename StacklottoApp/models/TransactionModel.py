@@ -24,7 +24,7 @@ class TransactionModel(models.Model):
     status = models.CharField(max_length=1, choices=TRANSACTION_STATUS)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     user = models.ForeignKey("UserModel", on_delete=models.CASCADE)
-    reference_number = models.CharField(max_length=250, unique=True)
+    reference_number = models.CharField(max_length=100, unique=True)
     details = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
 

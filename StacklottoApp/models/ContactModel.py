@@ -1,10 +1,10 @@
 from django.db import models
 
 class ContactModel(models.Model):
-    first_name = models.CharField(max_length=200, blank=True)
-    last_name = models.CharField(max_length=200, blank=True)
-    phone = models.CharField(max_length=200, blank=True)
-    email = models.CharField(max_length=200, blank=True)
+    first_name = models.CharField(max_length=100, blank=True)
+    last_name = models.CharField(max_length=100, blank=True)
+    phone = models.CharField(max_length=100, blank=True)
+    email = models.CharField(max_length=100, blank=True)
     message = models.TextField(blank=True)
     when = models.DateTimeField(auto_now_add=True)
 
