@@ -1,3 +1,4 @@
 uzu-accounts-app==1.1.9
 python-dotenv==0.15.0
 Django==2.0.6
+mysqlclient==2.0.2
