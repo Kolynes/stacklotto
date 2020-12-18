@@ -2,7 +2,10 @@ from .base import *
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+dotenv_file = os.path.join(os.path.dirname(__file__), "../../.env")
+load_dotenv(dotenv_file)
+
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = False
 
