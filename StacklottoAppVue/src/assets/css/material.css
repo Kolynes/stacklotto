@@ -1,0 +1,217 @@
+@import "./materialdesignicons.min.css";
+@import "./flaticon.css";
+
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/MaterialDesignIcons.woff2") format('woff2');
+}
+
+/* latin-ext */
+@font-face {
+    font-family: lato;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: nunito;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Nunito-Regular.ttf");
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+  
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.draw-1 {
+    font-family: nunito;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.draw-2 {
+    font-family: nunito;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.draw-3 {
+    font-family: nunito;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.counter {
+    font-family: lato;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 5px 15px;
+    display: inline-block;
+    background-color: #f04d61;
+    display: block;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+  
+.caption {
+    font-size: 12px;
+}
+
+.cmn-btn.btn-md {
+    width: 160px;
+}
+
+.cmn-btn {
+    background-image: linear-gradient(
+        90deg,
+        rgb(1, 141, 239) 0%,
+        rgb(0, 184, 234) 100%,
+        rgb(255, 237, 0) 100%
+    );
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.22);
+    width: 180px;
+    height: 50px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.9);
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3s;
+    font-family: nunito;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cmn-btn:hover {
+    color: #ffffff;
+}
+
+.breadcrumb-container {
+    background-color: #2b2d5c;
+    height: 164px;
+    color: white;
+}
+
+.breadcrumb {
+    background: transparent !important;
+}
+
+.breadcrumb a {
+    color: white;
+}
+
+.draw-card {
+    background-color: #091b41;
+    color: white;
+    width: 85%;
+    transform: translateY(-100px);
+    box-shadow: 0 10px 50px #091b41;
+}
+
+
+.hidden-xs {
+    display: none;
+}
+
+.hidden-sm-and-up {
+    display: initial;
+}
+
+@media screen and (min-width: 768px) {
+    .hidden-xs {
+        display: initial;
+    }
+
+    .hidden-sm-and-up {
+        display: none;
+    }
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.thColor {
+    background-color: #091b41;
+    color: white
+}
+
+.draw-number {
+    width: 36px;
+    height: 36px;
+    margin: 3px 3px;
+    display: inline-block;
+    background-color: #2b2d5c;
+    color: #ffffff;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 3px;
+}
+
+.draw-number.selected {
+  background-color: #f3619c;
+}
+
+.form-card {
+    max-width: 700px;
+    padding: 15px;
+    border: none;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1), 0 -1px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.blue {
+    color: rgb(0, 184, 234)
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.responsive {
+    width: 100%;
+}
+
+[disabled] {
+    opacity: 0.8 !important;
+}
+
+.quick-play-btn, .quick-play-btn:hover {
+    background-color: #091b40 !important;
+    height: 50px;
+}
+
+.red, .red:hover {
+    background-color: red !important;
+}
