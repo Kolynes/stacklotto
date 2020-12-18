@@ -16,7 +16,7 @@ class TicketModel(models.Model):
         (TWO_BACK_NUMBER_PLAY, "2 Back Number Play"),
     )
 
-    reference_number = models.CharField(max_length=50, unique=True)
+    reference_number = models.CharField(max_length=25, unique=True)
     type = models.CharField(max_length=2, choices=LOTTERY_TYPES, null=True, blank=True)
     lottery = models.ForeignKey("LotteryModel", on_delete=models.CASCADE)
     batch = models.CharField(max_length=100)
